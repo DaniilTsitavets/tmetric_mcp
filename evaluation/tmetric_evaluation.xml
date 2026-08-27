@@ -1,0 +1,47 @@
+<evaluation>
+  <!--
+    Answers are computed from evaluation/fixture.mjs and asserted by
+    evaluation/verify-answers.mjs, so they are stable and verifiable.
+    Every question is read-only and independent of the others.
+  -->
+  <qa_pair>
+    <question>Looking at everything tracked during June 2026, which day of the week accumulated the most hours in total across the whole month? Answer with the weekday name.</question>
+    <answer>Wednesday</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>How many hours were logged in total during the second full Monday-to-Friday stretch of June 2026? Answer with the number of hours only.</question>
+    <answer>36</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Exactly one block of work recorded in June 2026 finishes on a different calendar date than the one it starts on. What is the identifier of that record?</question>
+    <answer>830</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Among the projects that received any time during June 2026, one is not associated with any customer. What is that project called?</question>
+    <answer>Internal Tooling</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>During June 2026, how many separate blocks of work are marked as chargeable even though the project they belong to is not set up as chargeable? Answer with a number.</question>
+    <answer>4</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Within the first Monday-to-Friday stretch of June 2026, which calendar date has the smallest amount of recorded work? Answer with the date in YYYY-MM-DD form.</question>
+    <answer>2026-06-04</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Across June 2026, which named piece of work absorbed the most hours overall? Answer with its name.</question>
+    <answer>Document ingestion pipeline</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Considering only the project attached to the customer whose name begins with "Acme" and is still active, how many of its June 2026 hours are not chargeable? Answer with the number of hours.</question>
+    <answer>4.5</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What is the earliest date in June 2026 on which the total recorded work for the day reached a full eight hours or more? Answer with the date in YYYY-MM-DD form.</question>
+    <answer>2026-06-01</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Some work predates 2026 entirely. Counting only what was recorded before January 2026, how many hours were logged in total? Answer with the number of hours.</question>
+    <answer>12.5</answer>
+  </qa_pair>
+</evaluation>

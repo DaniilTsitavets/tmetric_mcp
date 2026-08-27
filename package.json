@@ -1,0 +1,45 @@
+{
+  "name": "tmetric-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for the TMetric time tracking API \u2014 log, review and correct time entries for specific days",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "tmetric-mcp-server": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js",
+    "test": "npm run build && node test/e2e.mjs",
+    "verify:eval": "node evaluation/verify-answers.mjs",
+    "eval:server": "node evaluation/fixture-server.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "tmetric",
+    "time-tracking",
+    "timesheet"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
